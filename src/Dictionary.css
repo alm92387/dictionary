@@ -1,7 +1,34 @@
+.Container {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Results {
+  text-decoration: none;
+  margin: 0 auto;
+  border: 5px solid #d788ec;
+  background-color: #eabbf7;
+  display: block;
+}
+li {
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+}
+h2 {
+  border: 1px solid #dd91f3;
+}
 .Dictionary {
   text-align: center;
   margin: 30px 0;
 }
 .Synonyms {
   display: inline;
+}
+.Phonetic {
+  border: 1px solid #dd91f3;
+}
+
+.Meaning {
+  border: 1px solid #dd91f3;
 }

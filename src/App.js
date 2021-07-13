@@ -5,6 +5,7 @@ import Dictionary from "./Dictionary"
 export default function App() {
   return (
     <div className="App">
+      <div className="Container">
       <header className="App-header"> 
        </header>
        <main>
@@ -12,6 +13,7 @@ export default function App() {
        </main>
           <footer className="App-footer"> 
           <small> 
+       
  <a href = "https://github.com/alm92387/weather-react3"> Open-source code
 by Alba Madera
 </a>
@@ -19,6 +21,7 @@ by Alba Madera
 </small>
   </footer>
     </div>
+     </div>
   );
 }
 
