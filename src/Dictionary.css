@@ -18,6 +18,10 @@ li {
 h2 {
   border: 1px solid #dd91f3;
 }
+.Title {
+  font-weight: 700px;
+  font-weight: bolder;
+}
 .Dictionary {
   text-align: center;
   margin: 30px 0;

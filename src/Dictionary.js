@@ -36,9 +36,13 @@ export default function Dictionary () {
     }
     return (
         <div className="Dictionary">
+            <section className="Title"> 
+             <strong> Dictionary APP 📔 </strong>
+             </section>
             <form onSubmit={search}>
                 <input type="search" onChange={handleKeywordChange} />
             </form>
+           
             <Results results={results} />
             <Photos photos={photos} />
         </div>
