@@ -1,6 +1,7 @@
 
 import './App.css';
 import Dictionary from "./Dictionary"
+// import Photos from './Photos';
 
 export default function App() {
   return (
@@ -10,7 +11,6 @@ export default function App() {
        </header>
        <main>
          <Dictionary />
-
        </main>
           <footer className="App-footer"> 
           <small> 

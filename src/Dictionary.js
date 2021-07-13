@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 import axios from "axios";
-import "./Dictionary.css";
 import Results from "./Results";
 import Photos from "./Photos";
+import "./Dictionary.css";
 
 
-export default function Dictionary () {
-    let [keyword, setKeyword] = useState ("");
+export default function Dictionary (props) {
+    let [keyword, setKeyword] = useState (props.defaultKeyword);
     let [results, setResults] = useState (null);
     let [photos, setPhotos] = useState (null);
     
@@ -15,6 +15,7 @@ export default function Dictionary () {
      setResults(response.data[0])
     }
     function handlePexelsResponse(response){
+        console.log(response);
         setPhotos(response.data.photos)
 
     }
@@ -25,8 +26,9 @@ export default function Dictionary () {
         
         let pexelsApiKey="563492ad6f91700001000001e31d0aedddf247d8a96aa09d1def8427";
         let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
-        axios.get(pexelsApiUrl,{ headers: {"Authorization" : `Bearer 
-        ${pexelsApiKey}`},}).then(handlePexelsResponse);
+        let headers = {Authorization : `Bearer 
+        ${pexelsApiKey}`};    
+        axios.get(pexelsApiUrl,{ headers: headers }).then(handlePexelsResponse);
     }
 
 
